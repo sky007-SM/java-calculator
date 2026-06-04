@@ -36,9 +36,21 @@ public class Calculator {
         System.out.print("Choose Operation (+, -, *, /): ");
         String operation = scan.next();
         System.out.print("Enter first number: ");
+        while (!scan.hasNextDouble()) {
+            System.out.print("Invalid input. Please enter a number:"); // Handles invalid input
+            scan.next();
+        }
+        
         double value1 = scan.nextDouble(); // double type used for larger decimal number 
+        System.out.println();
         System.out.print("Enter second number: ");
+        while (!scan.hasNextDouble()) {
+            System.out.print("Invalid input. Please enter a number:");
+            scan.next();
+        }
+        
         double value2 = scan.nextDouble();
+        System.out.println();
         calculate(operation, value1, value2); // Function that calculates answer
 
     }
