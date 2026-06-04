@@ -28,13 +28,13 @@ A simple command-line calculator built in Java
 Compile:
 
 ```bash
-javac -d build src/Calculator.java
+javac -d bin src/Calculator.java
 ```
 
 Run:
 
 ```bash
-java -cp build Calculator
+java -cp bin Calculator
 ```
 
 
